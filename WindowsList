@@ -1,0 +1,163 @@
+Turn off sharing drives: 
+Open file Explorer > Click this pc > Right click thye Local Disk Drive > share with > advanced sharing 
+> Uncheck share this folder > click ok.
+
+Creating Backups : Control panel > system and security > Backup and restore 
+System image- Contains files, programs, system file, settings
+Create system repair disk- Contains neccassary System files.
+____________________________________________________________________________________-
+
+++++++++++++ How to get to event viewer ++++++++++
+Control Panel > System and Security > Admin tools > event viewer
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Windows event viewer is used to see all notifications, errors , and information messages. 
+
+WINDOWS LOGS ON EVENT VIEWER FORENSIC INVESTIGATIONS: 
+Application: events logged by programs 
+Security: Any successful or unsuccsesfull logon attempts
+Setup: Events that occured during installation
+System: evevnts logged by Sysytem components 
+Forwarded Events: Events forwarded from other computers
+
+___________________________________________________________________________________
+
+Audit policy settings 
+
+How to get their?:
+Control Panel > System and Security > admin tools > Local Security Policy> Local Policies
+Audit policy 
+
+Success- generates an event when the requested action suceeds 
+Failure- Generates an event when the requested action fails
+No Auditing - Doesnt generate an action 
+
+Audit Policy Tracing  set to success failure and everything else 
+
+____________________________________________________________________________________-
+
+Task Manager 
+How to get their?:
+Search > Task Manager > PROCESSES 
+
+Close programs that are not responding PROCESSES
+Determine if any unnecessary piece of software is running 
+find the process that is associated with certian software
+some processes are essential for windows 
+SOME MALWARE CAN BE ENDED HERE
+
+to stop a service:
+Click open services > right click on service > click stop 
+
+Performance tab can show problems that can happen from a broken router, switch,
+cable , or computer intself
+CLCIK OPEN RESOURCE MONITOR  to view it 
+
+________________________________________________________________________________
+
+Services (not in task manager)
+
+How to get their?:
+search > Services.msc
+
+What is here? 
+Programs that run invisibly and automatically in the background 
+Running vs. Stopped services 
+
+The most insecure are those that allow remote connections.
+Ex. Remote Desktop Protocol
+
+_______________________________________________________________________________
+Password Policies:
+
+*Passwd History: 5 rem.
+*Passwd max age: 90 for users, 30 admin
+*Pwaas min age: 10-30 days
+*Passwd min length : 10 chars
+* = in script
+Complexity: Enable 
+Reversible encryption: disable
+________________________________________________________________________________
+Lockout Policies:
+
+*Lockout duration:30 min
+*Thresholds: 3-10 attempts
+*Reset counter : 30 min
+* = in script
+____________________________________________________________________________________-
+Windows Defender Security Ceter:
+
+How to get their?:
+settings> Win. settings > Update and security > Windows security
+
+Defender and Anti-Malware
+update reguraly
+*turn on win defender
+download a antivirus
+Disable windows defender if you choose a different abnti malware can cause compatibilty issues
+
+Firewalls;
+*turn on and use recommended setings
+safer to allow certian programs than an entire port 
+Common Exceptions:
+Core networking 
+File and printer sharing
+Remote assistance 
+Remote Desktop
+UPnP (Universal plug and play)
+
+Windows Update:
+*turn on and check for auto updates 
+* = in script
+
+________________________________________________________________________________
+
+Account Management 
+
+MMC- Allows setiings to b made to user and group permissions 
+
+Snap ins are the tools the MMC acesses to make settings 
+
+To acess mmc:
+search > mmc > cleick yes to allow changes to computer 
+
+To access snapins in MMC:
+File> Add/Remove snap ins 
+
+* Define a users level of access by categorizing his/her account as a user or administrator
+
+To setup the local user and groups concsole :
+start menu > Search mmc > click yes to allow changes to happen to computer > click file
+> add/ remove snap ins > Select Local USers/ and groups > select add > select finsih > ok
+
+Local/ Admins:
+hide account by changing its name (if labled admin )
+add a password
+restrict use of the account [use properties to remove unneccasray accounts from the admin group]
+Set passwords for all acounts
+
+delete acoount to remove an acoount
+When adding a new user be acoutiuos about what group and account ype follow all bilaws 
+____________________________________________________________________________________
+
+Things that I did last Comp:
+
+Remove Unathorized users
+user was not suppose to be a admin
+user had no password
+secure min password length
+sufficent password age
+FTP Service is disabled and stoped
+Remove prohibited files
+Disabled file sharing for C drive
+updated notepad ++
+Do not require CTRL+ALT+DELETE [disabled}
+enable firewall
+majority of windows updates are installed
+removed plain text file with passwords in it(user had it)
+Removed Itunes
+Removed Team Viewer
+Removed Driver Support
+Removed Angry IP Scanner
+Some users passwords were insecure
+________________________________________________________________________________
